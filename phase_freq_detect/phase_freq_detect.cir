@@ -1,0 +1,31 @@
+* /home/kanish/Mixed_Signal_Phase_Frequency_Detector_using_SKY130/phase_freq_detect/phase_freq_detect.cir
+
+* EESchema Netlist Version 1.1 (Spice format) creation date: Fri Nov 25 18:31:58 2022
+
+* To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
+* To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
+
+* Sheet Name: /
+U6  Net-_U3-Pad4_ Net-_U3-Pad5_ Net-_U3-Pad6_ Net-_U2-Pad1_ ? d_posedge_ff		
+U1  Net-_U1-Pad1_ Net-_U1-Pad2_ Net-_U1-Pad3_ Net-_U1-Pad4_ ? d_posedge_ff		
+v1  clka gnd pulse		
+v2  clkb gnd pulse		
+U7  up plot_v1		
+U8  down plot_v1		
+U9  clka plot_v1		
+U10  clkb plot_v1		
+scmode1  SKY130mode		
+v3  Vdd gnd DC		
+U5  clkb rst Vdd Net-_U1-Pad1_ Net-_U1-Pad2_ Net-_U1-Pad3_ adc_bridge_3		
+U3  clka rst Vdd Net-_U3-Pad4_ Net-_U3-Pad5_ Net-_U3-Pad6_ adc_bridge_3		
+U2  Net-_U2-Pad1_ up dac_bridge_1		
+U4  Net-_U1-Pad4_ down dac_bridge_1		
+SC1  Net-_SC1-Pad1_ up Vdd Vdd sky130_fd_pr__pfet_01v8_hvt		
+SC5  rst Net-_SC1-Pad1_ Vdd Vdd sky130_fd_pr__pfet_01v8_hvt		
+SC4  Net-_SC1-Pad1_ down Vdd Vdd sky130_fd_pr__pfet_01v8_hvt		
+SC2  Net-_SC1-Pad1_ up Net-_SC2-Pad3_ Net-_SC2-Pad3_ sky130_fd_pr__nfet_01v8_lvt		
+SC3  Net-_SC2-Pad3_ down gnd gnd sky130_fd_pr__nfet_01v8_lvt		
+SC6  rst Net-_SC1-Pad1_ gnd gnd sky130_fd_pr__nfet_01v8_lvt		
+U11  rst plot_v1		
+
+.end
