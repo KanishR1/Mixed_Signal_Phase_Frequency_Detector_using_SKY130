@@ -1,12 +1,12 @@
 * /home/kanish/mixed_signal_phase_frequency_detector_using_sky130/phase_freq_detect/phase_freq_detect.cir
 
-.lib "/usr/share/local/sky130_fd_pr/models/sky130.lib.spice" tt
-.include "/usr/share/local/sky130_fd_pr/models/sky130_fd_pr__model__linear.model.spice"
-.include "/usr/share/local/sky130_fd_pr/models/sky130_fd_pr__model__pnp.model.spice"
-.include "/usr/share/local/sky130_fd_pr/models/sky130_fd_pr__model__diode_pw2nd_11v0.model.spice"
-.include "/usr/share/local/sky130_fd_pr/models/sky130_fd_pr__model__inductors.model.spice"
-.include "/usr/share/local/sky130_fd_pr/models/sky130_fd_pr__model__diode_pd2nw_11v0.model.spice"
 .include "/usr/share/local/sky130_fd_pr/models/sky130_fd_pr__model__r+c.model.spice"
+.include "/usr/share/local/sky130_fd_pr/models/sky130_fd_pr__model__pnp.model.spice"
+.include "/usr/share/local/sky130_fd_pr/models/sky130_fd_pr__model__diode_pd2nw_11v0.model.spice"
+.include "/usr/share/local/sky130_fd_pr/models/sky130_fd_pr__model__linear.model.spice"
+.include "/usr/share/local/sky130_fd_pr/models/sky130_fd_pr__model__diode_pw2nd_11v0.model.spice"
+.lib "/usr/share/local/sky130_fd_pr/models/sky130.lib.spice" tt
+.include "/usr/share/local/sky130_fd_pr/models/sky130_fd_pr__model__inductors.model.spice"
 * u6  net-_u3-pad4_ net-_u3-pad5_ net-_u3-pad6_ net-_u2-pad1_ ? d_posedge_ff
 * u1  net-_u1-pad1_ net-_u1-pad2_ net-_u1-pad3_ net-_u1-pad4_ ? d_posedge_ff
 v1  clka gnd pulse(0 1.8 2m 0.1m 0.1m 13m 30m)
@@ -39,7 +39,7 @@ a6 [net-_u1-pad4_ ] [down ] u4
 * Schematic Name:                             d_posedge_ff, NgSpice Name: d_posedge_ff
 .model u1 d_posedge_ff(rise_delay=1.0e-9 fall_delay=1.0e-9 input_load=1.0e-12 instance_id=1 ) 
 * Schematic Name:                             adc_bridge_3, NgSpice Name: adc_bridge
-.model u5 adc_bridge(in_low=1.0 in_high=2.0 rise_delay=1.0e-9 fall_delay=1.0e-9 ) 30m
+.model u5 adc_bridge(in_low=1.0 in_high=2.0 rise_delay=1.0e-9 fall_delay=1.0e-9 ) 
 * Schematic Name:                             adc_bridge_3, NgSpice Name: adc_bridge
 .model u3 adc_bridge(in_low=1.0 in_high=2.0 rise_delay=1.0e-9 fall_delay=1.0e-9 ) 
 * Schematic Name:                             dac_bridge_1, NgSpice Name: dac_bridge
@@ -53,6 +53,10 @@ a6 [net-_u1-pad4_ ] [down ] u4
 run
 print allv > plot_data_v.txt
 print alli > plot_data_i.txt
-plot v(up)+6 v(down) v(clka)+24 v(clkb)+18 v(rst)+12
+plot v(up)
+plot v(down)
+plot v(clka)
+plot v(clkb)
+plot v(rst)
 .endc
 .end

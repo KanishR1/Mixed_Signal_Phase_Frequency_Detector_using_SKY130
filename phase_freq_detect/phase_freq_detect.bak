@@ -130,54 +130,54 @@ clkb
 $Comp
 L plot_v1 U7
 U 1 1 6380C37E
-P 900 3650
-F 0 "U7" H 900 4150 60  0000 C CNN
-F 1 "plot_v1" H 1100 4000 60  0000 C CNN
-F 2 "" H 900 3650 60  0000 C CNN
-F 3 "" H 900 3650 60  0000 C CNN
-	1    900  3650
+P 1000 3650
+F 0 "U7" H 1000 4150 60  0000 C CNN
+F 1 "plot_v1" H 1200 4000 60  0000 C CNN
+F 2 "" H 1000 3650 60  0000 C CNN
+F 3 "" H 1000 3650 60  0000 C CNN
+	1    1000 3650
 	1    0    0    -1  
 $EndComp
 $Comp
 L plot_v1 U8
 U 1 1 6380C411
-P 1350 3650
-F 0 "U8" H 1350 4150 60  0000 C CNN
-F 1 "plot_v1" H 1550 4000 60  0000 C CNN
-F 2 "" H 1350 3650 60  0000 C CNN
-F 3 "" H 1350 3650 60  0000 C CNN
-	1    1350 3650
+P 1400 3650
+F 0 "U8" H 1400 4150 60  0000 C CNN
+F 1 "plot_v1" H 1600 4000 60  0000 C CNN
+F 2 "" H 1400 3650 60  0000 C CNN
+F 3 "" H 1400 3650 60  0000 C CNN
+	1    1400 3650
 	1    0    0    -1  
 $EndComp
 $Comp
 L plot_v1 U9
 U 1 1 6380C45A
-P 1750 3650
-F 0 "U9" H 1750 4150 60  0000 C CNN
-F 1 "plot_v1" H 1950 4000 60  0000 C CNN
-F 2 "" H 1750 3650 60  0000 C CNN
-F 3 "" H 1750 3650 60  0000 C CNN
-	1    1750 3650
+P 1800 3650
+F 0 "U9" H 1800 4150 60  0000 C CNN
+F 1 "plot_v1" H 2000 4000 60  0000 C CNN
+F 2 "" H 1800 3650 60  0000 C CNN
+F 3 "" H 1800 3650 60  0000 C CNN
+	1    1800 3650
 	1    0    0    -1  
 $EndComp
 $Comp
 L plot_v1 U10
 U 1 1 6380C4A6
-P 2150 3650
-F 0 "U10" H 2150 4150 60  0000 C CNN
-F 1 "plot_v1" H 2350 4000 60  0000 C CNN
-F 2 "" H 2150 3650 60  0000 C CNN
-F 3 "" H 2150 3650 60  0000 C CNN
-	1    2150 3650
+P 2200 3650
+F 0 "U10" H 2200 4150 60  0000 C CNN
+F 1 "plot_v1" H 2400 4000 60  0000 C CNN
+F 2 "" H 2200 3650 60  0000 C CNN
+F 3 "" H 2200 3650 60  0000 C CNN
+	1    2200 3650
 	1    0    0    -1  
 $EndComp
-Text GLabel 900  3500 3    60   Input ~ 0
+Text GLabel 1000 3500 3    60   Input ~ 0
 up
-Text GLabel 1350 3500 3    60   Input ~ 0
+Text GLabel 1400 3500 3    60   Input ~ 0
 down
-Text GLabel 1750 3500 3    60   Input ~ 0
+Text GLabel 1800 3500 3    60   Input ~ 0
 clka
-Text GLabel 2150 3500 3    60   Input ~ 0
+Text GLabel 2200 3500 3    60   Input ~ 0
 clkb
 $Comp
 L SKY130mode scmode1
@@ -293,13 +293,13 @@ Wire Wire Line
 Wire Wire Line
 	4100 5000 4100 4950
 Wire Wire Line
-	900  3500 900  3450
+	1000 3500 1000 3450
 Wire Wire Line
-	1350 3500 1350 3450
+	1400 3500 1400 3450
 Wire Wire Line
-	1750 3500 1750 3450
+	1800 3500 1800 3450
 Wire Wire Line
-	2150 3500 2150 3450
+	2200 3500 2200 3450
 Wire Wire Line
 	3200 5000 3900 5000
 Wire Wire Line
@@ -503,4 +503,19 @@ Text GLabel 7150 3100 2    60   Input ~ 0
 rst
 Wire Wire Line
 	7150 3100 7050 3100
+$Comp
+L plot_v1 U11
+U 1 1 6381178D
+P 600 3650
+F 0 "U11" H 600 4150 60  0000 C CNN
+F 1 "plot_v1" H 800 4000 60  0000 C CNN
+F 2 "" H 600 3650 60  0000 C CNN
+F 3 "" H 600 3650 60  0000 C CNN
+	1    600  3650
+	1    0    0    -1  
+$EndComp
+Text GLabel 600  3500 3    60   Input ~ 0
+rst
+Wire Wire Line
+	600  3500 600  3450
 $EndSCHEMATC

@@ -1,5 +1,5 @@
 * /home/kanish/mixed_signal_phase_frequency_detector_using_sky130/phase_freq_detect/phase_freq_detect.cir
-Transient Analysis  Fri Nov 25 18:41:22  2022
+Transient Analysis  Sun Nov 27 22:42:29  2022
 --------------------------------------------------------------------------------
 Index   time                            clka            clkb            
 --------------------------------------------------------------------------------
@@ -2413,7 +2413,7 @@ Index   time                            clka            clkb
 2290	1.500000e-01	0.000000e+00	0.000000e+00	1.800000e+00	
 
 * /home/kanish/mixed_signal_phase_frequency_detector_using_sky130/phase_freq_detect/phase_freq_detect.cir
-Transient Analysis  Fri Nov 25 18:41:22  2022
+Transient Analysis  Sun Nov 27 22:42:29  2022
 --------------------------------------------------------------------------------
 Index   time            down            m.xsc1.msky130_ m.xsc1.msky130_ 
 --------------------------------------------------------------------------------
@@ -4827,7 +4827,7 @@ Index   time            down            m.xsc1.msky130_ m.xsc1.msky130_
 2290	1.500000e-01	5.000000e+00	1.800000e+00	1.800000e+00	
 
 * /home/kanish/mixed_signal_phase_frequency_detector_using_sky130/phase_freq_detect/phase_freq_detect.cir
-Transient Analysis  Fri Nov 25 18:41:22  2022
+Transient Analysis  Sun Nov 27 22:42:29  2022
 --------------------------------------------------------------------------------
 Index   time            m.xsc1.msky130_ m.xsc2.msky130_ m.xsc2.msky130_ 
 --------------------------------------------------------------------------------
@@ -7241,7 +7241,7 @@ Index   time            m.xsc1.msky130_ m.xsc2.msky130_ m.xsc2.msky130_
 2290	1.500000e-01	1.800000e+00	8.245793e-09	8.279726e-09	
 
 * /home/kanish/mixed_signal_phase_frequency_detector_using_sky130/phase_freq_detect/phase_freq_detect.cir
-Transient Analysis  Fri Nov 25 18:41:22  2022
+Transient Analysis  Sun Nov 27 22:42:29  2022
 --------------------------------------------------------------------------------
 Index   time            m.xsc2.msky130_ m.xsc3.msky130_ m.xsc3.msky130_ 
 --------------------------------------------------------------------------------
@@ -9655,7 +9655,7 @@ Index   time            m.xsc2.msky130_ m.xsc3.msky130_ m.xsc3.msky130_
 2290	1.500000e-01	8.234476e-09	1.335308e-19	3.338265e-19	
 
 * /home/kanish/mixed_signal_phase_frequency_detector_using_sky130/phase_freq_detect/phase_freq_detect.cir
-Transient Analysis  Fri Nov 25 18:41:22  2022
+Transient Analysis  Sun Nov 27 22:42:29  2022
 --------------------------------------------------------------------------------
 Index   time            m.xsc3.msky130_ m.xsc4.msky130_ m.xsc4.msky130_ 
 --------------------------------------------------------------------------------
@@ -12069,7 +12069,7 @@ Index   time            m.xsc3.msky130_ m.xsc4.msky130_ m.xsc4.msky130_
 2290	1.500000e-01	6.676540e-20	1.800000e+00	1.800000e+00	
 
 * /home/kanish/mixed_signal_phase_frequency_detector_using_sky130/phase_freq_detect/phase_freq_detect.cir
-Transient Analysis  Fri Nov 25 18:41:22  2022
+Transient Analysis  Sun Nov 27 22:42:29  2022
 --------------------------------------------------------------------------------
 Index   time            m.xsc4.msky130_ m.xsc5.msky130_ m.xsc5.msky130_ 
 --------------------------------------------------------------------------------
@@ -14483,7 +14483,7 @@ Index   time            m.xsc4.msky130_ m.xsc5.msky130_ m.xsc5.msky130_
 2290	1.500000e-01	1.800000e+00	1.800000e+00	1.800000e+00	
 
 * /home/kanish/mixed_signal_phase_frequency_detector_using_sky130/phase_freq_detect/phase_freq_detect.cir
-Transient Analysis  Fri Nov 25 18:41:22  2022
+Transient Analysis  Sun Nov 27 22:42:29  2022
 --------------------------------------------------------------------------------
 Index   time            m.xsc5.msky130_ m.xsc6.msky130_ m.xsc6.msky130_ 
 --------------------------------------------------------------------------------
@@ -16897,7 +16897,7 @@ Index   time            m.xsc5.msky130_ m.xsc6.msky130_ m.xsc6.msky130_
 2290	1.500000e-01	1.800000e+00	1.497533e-19	3.743827e-19	
 
 * /home/kanish/mixed_signal_phase_frequency_detector_using_sky130/phase_freq_detect/phase_freq_detect.cir
-Transient Analysis  Fri Nov 25 18:41:22  2022
+Transient Analysis  Sun Nov 27 22:42:29  2022
 --------------------------------------------------------------------------------
 Index   time            m.xsc6.msky130_ net-_sc1-pad1_  net-_sc2-pad3_  
 --------------------------------------------------------------------------------
@@ -19311,7 +19311,7 @@ Index   time            m.xsc6.msky130_ net-_sc1-pad1_  net-_sc2-pad3_
 2290	1.500000e-01	7.487664e-20	1.800000e+00	8.223159e-09	
 
 * /home/kanish/mixed_signal_phase_frequency_detector_using_sky130/phase_freq_detect/phase_freq_detect.cir
-Transient Analysis  Fri Nov 25 18:41:22  2022
+Transient Analysis  Sun Nov 27 22:42:29  2022
 --------------------------------------------------------------------------------
 Index   time            rst             sky130_fd_pr__e up              
 --------------------------------------------------------------------------------
@@ -21725,7 +21725,7 @@ Index   time            rst             sky130_fd_pr__e up
 2290	1.500000e-01	9.222183e-09	0.000000e+00	0.000000e+00	
 
 * /home/kanish/mixed_signal_phase_frequency_detector_using_sky130/phase_freq_detect/phase_freq_detect.cir
-Transient Analysis  Fri Nov 25 18:41:22  2022
+Transient Analysis  Sun Nov 27 22:42:29  2022
 --------------------------------------------------------------------------------
 Index   time            vdd             
 --------------------------------------------------------------------------------

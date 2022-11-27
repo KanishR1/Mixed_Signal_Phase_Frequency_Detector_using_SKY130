@@ -1,5 +1,5 @@
 * /home/kanish/mixed_signal_phase_frequency_detector_using_sky130/phase_freq_detect/phase_freq_detect.cir
-Transient Analysis  Fri Nov 25 18:41:22  2022
+Transient Analysis  Sun Nov 27 22:42:29  2022
 --------------------------------------------------------------------------------
 Index   time            a5#branch_1_0   a6#branch_1_0   v1#branch       
 --------------------------------------------------------------------------------
@@ -2413,7 +2413,7 @@ Index   time            a5#branch_1_0   a6#branch_1_0   v1#branch
 2290	1.500000e-01	-3.34767e-25	-6.73093e-26	0.000000e+00	
 
 * /home/kanish/mixed_signal_phase_frequency_detector_using_sky130/phase_freq_detect/phase_freq_detect.cir
-Transient Analysis  Fri Nov 25 18:41:22  2022
+Transient Analysis  Sun Nov 27 22:42:29  2022
 --------------------------------------------------------------------------------
 Index   time            v2#branch       v3#branch       
 --------------------------------------------------------------------------------
