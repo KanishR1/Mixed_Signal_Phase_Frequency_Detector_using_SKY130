@@ -1,13 +1,11 @@
 * /home/kanish/Mixed_Signal_Phase_Frequency_Detector_using_SKY130/phase_freq_detect/phase_freq_detect.cir
 
-* EESchema Netlist Version 1.1 (Spice format) creation date: Fri Nov 25 18:31:58 2022
+* EESchema Netlist Version 1.1 (Spice format) creation date: Wed Dec 14 20:21:32 2022
 
 * To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
 * To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
 
 * Sheet Name: /
-U6  Net-_U3-Pad4_ Net-_U3-Pad5_ Net-_U3-Pad6_ Net-_U2-Pad1_ ? d_posedge_ff		
-U1  Net-_U1-Pad1_ Net-_U1-Pad2_ Net-_U1-Pad3_ Net-_U1-Pad4_ ? d_posedge_ff		
 v1  clka gnd pulse		
 v2  clkb gnd pulse		
 U7  up plot_v1		
@@ -27,5 +25,12 @@ SC2  Net-_SC1-Pad1_ up Net-_SC2-Pad3_ Net-_SC2-Pad3_ sky130_fd_pr__nfet_01v8_lvt
 SC3  Net-_SC2-Pad3_ down gnd gnd sky130_fd_pr__nfet_01v8_lvt		
 SC6  rst Net-_SC1-Pad1_ gnd gnd sky130_fd_pr__nfet_01v8_lvt		
 U11  rst plot_v1		
+U12  upb plot_v1		
+U13  downb plot_v1		
+U1  Net-_U1-Pad1_ Net-_U1-Pad2_ Net-_U1-Pad3_ Net-_U1-Pad4_ downb d_p_ff		
+U6  Net-_U3-Pad4_ Net-_U3-Pad5_ Net-_U3-Pad6_ Net-_U2-Pad1_ upb d_p_ff		
+X1  ? up down Net-_X1-Pad4_ ? Net-_U15-Pad~_ Net-_X1-Pad7_ ? lm_741		
+U15  Net-_U15-Pad~_ plot_v1		
+v4  Net-_X1-Pad7_ Net-_X1-Pad4_ DC		
 
 .end

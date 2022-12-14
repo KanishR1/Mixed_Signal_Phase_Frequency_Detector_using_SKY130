@@ -1,4 +1,4 @@
-module  d_posedge_ff(clk,rst,din,q,qb);
+module  d_p_ff(clk,rst,din,q,qb);
     input clk,rst,din;
     output reg q;
     output qb;

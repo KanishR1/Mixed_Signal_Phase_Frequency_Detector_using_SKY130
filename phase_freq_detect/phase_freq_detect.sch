@@ -54,35 +54,13 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L d_posedge_ff U6
-U 1 1 6380AA05
-P 4900 5850
-F 0 "U6" H 7750 7650 60  0000 C CNN
-F 1 "d_posedge_ff" H 7750 7850 60  0000 C CNN
-F 2 "" H 7750 7800 60  0000 C CNN
-F 3 "" H 7750 7800 60  0000 C CNN
-	1    4900 5850
-	0    -1   -1   0   
-$EndComp
-$Comp
-L d_posedge_ff U1
-U 1 1 6380AAEF
-P 2200 5850
-F 0 "U1" H 5050 7650 60  0000 C CNN
-F 1 "d_posedge_ff" H 5050 7850 60  0000 C CNN
-F 2 "" H 5050 7800 60  0000 C CNN
-F 3 "" H 5050 7800 60  0000 C CNN
-	1    2200 5850
-	0    1    -1   0   
-$EndComp
 Text GLabel 1000 1400 1    60   Input ~ 0
 Vdd
 $Comp
-L GND #PWR1
+L GND #PWR01
 U 1 1 6380B0DB
 P 1550 850
-F 0 "#PWR1" H 1550 600 50  0001 C CNN
+F 0 "#PWR01" H 1550 600 50  0001 C CNN
 F 1 "GND" H 1550 700 50  0000 C CNN
 F 2 "" H 1550 850 50  0001 C CNN
 F 3 "" H 1550 850 50  0001 C CNN
@@ -203,8 +181,6 @@ F 3 "" H 1000 1900 60  0000 C CNN
 	1    1000 1900
 	1    0    0    -1  
 $EndComp
-NoConn ~ 3100 2200
-NoConn ~ 4000 2300
 $Comp
 L adc_bridge_3 U5
 U 1 1 6380AC7C
@@ -249,8 +225,6 @@ F 3 "" H 4050 1650 60  0000 C CNN
 	1    4050 1650
 	0    1    -1   0   
 $EndComp
-Wire Wire Line
-	3100 2300 3100 2200
 Wire Wire Line
 	3000 3800 3000 3700
 Wire Wire Line
@@ -518,4 +492,105 @@ Text GLabel 600  3500 3    60   Input ~ 0
 rst
 Wire Wire Line
 	600  3500 600  3450
+Text GLabel 3100 2300 1    60   Input ~ 0
+upb
+Text GLabel 4000 2300 1    60   Input ~ 0
+downb
+$Comp
+L plot_v1 U12
+U 1 1 638D5DE7
+P 1050 4650
+F 0 "U12" H 1050 5150 60  0000 C CNN
+F 1 "plot_v1" H 1250 5000 60  0000 C CNN
+F 2 "" H 1050 4650 60  0000 C CNN
+F 3 "" H 1050 4650 60  0000 C CNN
+	1    1050 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L plot_v1 U13
+U 1 1 638D5E30
+P 1500 4650
+F 0 "U13" H 1500 5150 60  0000 C CNN
+F 1 "plot_v1" H 1700 5000 60  0000 C CNN
+F 2 "" H 1500 4650 60  0000 C CNN
+F 3 "" H 1500 4650 60  0000 C CNN
+	1    1500 4650
+	1    0    0    -1  
+$EndComp
+Text GLabel 1050 4450 3    60   Input ~ 0
+upb
+Text GLabel 1500 4450 3    60   Input ~ 0
+downb
+$Comp
+L d_p_ff U1
+U 1 1 638D5D24
+P 2200 5850
+F 0 "U1" H 5050 7650 60  0000 C CNN
+F 1 "d_p_ff" H 5050 7850 60  0000 C CNN
+F 2 "" H 5050 7800 60  0000 C CNN
+F 3 "" H 5050 7800 60  0000 C CNN
+	1    2200 5850
+	0    1    -1   0   
+$EndComp
+$Comp
+L d_p_ff U6
+U 1 1 638D62B8
+P 4900 5850
+F 0 "U6" H 7750 7650 60  0000 C CNN
+F 1 "d_p_ff" H 7750 7850 60  0000 C CNN
+F 2 "" H 7750 7800 60  0000 C CNN
+F 3 "" H 7750 7800 60  0000 C CNN
+	1    4900 5850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L lm_741 X1
+U 1 1 638D8DC9
+P 3150 6700
+F 0 "X1" H 2950 6700 60  0000 C CNN
+F 1 "lm_741" H 3050 6450 60  0000 C CNN
+F 2 "" H 3150 6700 60  0000 C CNN
+F 3 "" H 3150 6700 60  0000 C CNN
+	1    3150 6700
+	1    0    0    -1  
+$EndComp
+Text GLabel 2600 6550 0    60   Input ~ 0
+up
+Text GLabel 2600 6800 0    60   Input ~ 0
+down
+$Comp
+L plot_v1 U15
+U 1 1 638D9448
+P 3700 6900
+F 0 "U15" H 3700 7400 60  0000 C CNN
+F 1 "plot_v1" H 3900 7250 60  0000 C CNN
+F 2 "" H 3700 6900 60  0000 C CNN
+F 3 "" H 3700 6900 60  0000 C CNN
+	1    3700 6900
+	1    0    0    -1  
+$EndComp
+$Comp
+L DC v4
+U 1 1 638D9628
+P 2050 7000
+F 0 "v4" H 1850 7100 60  0000 C CNN
+F 1 "DC" H 1850 6950 60  0000 C CNN
+F 2 "R1" H 1750 7000 60  0000 C CNN
+F 3 "" H 2050 7000 60  0000 C CNN
+	1    2050 7000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 6550 2050 6100
+Wire Wire Line
+	2050 6100 3000 6100
+Wire Wire Line
+	3000 6100 3000 6250
+Wire Wire Line
+	2050 7450 2050 7500
+Wire Wire Line
+	2050 7500 3000 7500
+Wire Wire Line
+	3000 7500 3000 7150
 $EndSCHEMATC
